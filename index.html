@@ -6,26 +6,41 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1 align="center">Мои контакты</h1>
-	<hr>
+	<header>
+		<h1 align="center">My site portfolio</h1>
+	</header>
+
 	<form action="" method="POST">
-		<input type="text" name="name" id="name" placeholder="Enter your name">
-		<input type="password" name="password" id="password" placeholder="Enter your password">
-		<input type="submit" value="Submit" >
-		<input type="reset" value="">
+		<div id="div-name">
+		<label for="name">Yor name: 
+			<input type="text" name="name" id="name" placeholder="Enter your name">
+		</label>
+		</div><br>
+		<div id="div-password">
+		<label for="password">Your password: 
+			<input type="password" name="password" id="password" placeholder="Enter your password">
+		</label>
+	</div><br>
+	<div id="div-submit">
+		<label for="submit">Submit: 
+			<input type="submit" value="Submit" >
+		</label>
+	</div><br>
+	<textarea name="comment" width="20%" height="200" maxlength="400"></textarea>
 	</form>
-	<div id="div-social">
-		<h3>Я в соц.сетях</h3>
+	<nav>
 		<ul>
-			<li><a href="#">Facebook</a></li>
-			<li><a href="#">LinkedIn</a></li>
+			<li></li>
+			<li></li>
+			<li></li>
 		</ul>
-	</div>
-	<div>
+	</nav>
+	<main>
 		<h2>About me: </h2>
-		<div>
+		<figure>
 			<img src="Снимок.JPG" alt="" width="10%">
-		</div>
+			<figcaption>My photo</figcaption>
+		</figure>
 		<div>
 			<h3>My biography: </h3>
 			<p>Id laborum in veniam voluptate nisi in elit ex Lorem id anim laborum.
@@ -33,10 +48,20 @@
 				 esse nulla nisi. Labore anim non aliqua magna sunt dolore officia sunt aute Lorem. 
 				Incididunt laborum proident occaecat nostrud aliqua ullamco cillum aliqua velit voluptate.</p>
 		</div>
-	</div>
+	</main>
 	<div class="balls" id="ball1"></div>
 	<div class="balls" id="ball2"></div>
-	<a href="" target="_blank">Text</a>
+	<footer>
+		<h2>Contacts</h2>
+	
+		<div id="div-social">
+			<h3>Solial: </h3>
+			<ul>
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">LinkedIn</a></li>
+			</ul>
+		</div>
+	</footer>
 </body>
 </html>
     
