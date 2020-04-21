@@ -1,13 +1,32 @@
 .container{
-    width: 1440px ;
-    margin: auto;
+    width: 750px ;
+    margin: 0 auto;
 }
 
 header{
     text-align: center;
+    background-color: salmon;
+}
+
+main, aside{
+    height: 400px;
 }
 
 main{
-    width: 1000px;
-    margin: 0 auto;
+    float: left;
+    width: 80%;
+    background-color: rosybrown;
+}
+
+aside{
+    float: left;
+    background-color: rgb(184, 163, 204);
+    width: 20%;
+}
+
+
+footer{
+    text-align: center;
+    background-color: royalblue;
+    clear: both;
 }
