@@ -1,32 +1,22 @@
 (function() {
-    var doc = document,
-        box = doc.getElementById('box');
+    var doc = document;
 
-    // box.onclick = function() {
-    //     this.style.backgroundColor = "yellow";
-    // };
-    var changeColor = function() {
+    var changeColor = function(e) {
+        eventsObj.preventDefault(e);
 
-        if (this.id === 'day') {
+        var elem = eventsObj.getTarget(e);
+
+
+        if (elem.id === 'day') {
             doc.body.className = "day";
-        } else if (this.id === "night") {
+        } else if (elem.id === "night") {
             doc.body.className = "night";
         }
     };
 
-    var sayHi = function() {
-        alert(this.textContent + "!");
-    }
-
     var buttons = doc.getElementsByTagName('button');
 
     for (let index = 0; index < buttons.length; index++) {
-        buttons[index].addEventListener('click', changeColor, false);
-        buttons[index].addEventListener('click', sayHi, false);
+        eventsObj.addEvent(buttons[index], 'click', changeColor);
     };
-
-
-
-
-
 })();
