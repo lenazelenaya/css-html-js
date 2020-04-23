@@ -1,0 +1,23 @@
+body {
+    padding: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    border: 5px solid rgb(12, 148, 42);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background-color: rgba(39, 134, 52, 0.3);
+    border: 2px solid rgba(18, 129, 18, 0.5);
+}
